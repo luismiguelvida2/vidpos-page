@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f7fb">
+    <meta name="description" content="VidPos: ventas, comandas e inventario en un solo lugar. Una forma más simple de llevar tu negocio.">
+    <link rel="icon" type="image/svg+xml" href="./images/VidPos_logo_v.svg">
+    <title>VidPos</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="landing-page">
+    <svg class="feature-icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="feature-icon-sales" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8.5c-.7-.7-1.7-1-3-1-1.7 0-2.8.8-2.8 2s1.1 1.8 2.8 2.2 2.8 1 2.8 2.3-1.1 2.3-2.9 2.3c-1.2 0-2.3-.4-3.2-1.2M12 5.5v13"/></symbol>
+      <symbol id="feature-icon-tables" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></symbol>
+      <symbol id="feature-icon-orders" viewBox="0 0 24 24"><path d="M6 3.5h12a1.5 1.5 0 0 1 1.5 1.5v14L16 17l-4 2-4-2-3.5 2v-14A1.5 1.5 0 0 1 6 3.5Z"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4"/></symbol>
+      <symbol id="feature-icon-offline" viewBox="0 0 24 24"><path d="M3 8.5a14 14 0 0 1 16.8-2.2M6.5 12a9 9 0 0 1 8.2-1.8M10 15.5a4 4 0 0 1 3.1-.8M12 19h.01"/><path d="m3 3 18 18"/></symbol>
+      <symbol id="feature-icon-movements" viewBox="0 0 24 24"><path d="M3.5 20.5h17"/><rect x="5" y="11" width="3.5" height="7" rx="1"/><rect x="10.3" y="6" width="3.5" height="12" rx="1"/><rect x="15.6" y="3.5" width="3.5" height="14.5" rx="1"/></symbol>
+      <symbol id="feature-icon-catalog" viewBox="0 0 24 24"><path d="m12 3 8.5 4.5v9L12 21l-8.5-4.5v-9L12 3Z"/><path d="m3.8 7.7 8.2 4.5 8.2-4.5M12 12.2V21"/></symbol>
+      <symbol id="feature-icon-inventory" viewBox="0 0 24 24"><path d="M4 7.5h16v13H4zM3 4h18v3.5H3z"/><path d="M9 11h6"/></symbol>
+      <symbol id="feature-icon-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.3"/><path d="M2.8 20v-1.5A5.2 5.2 0 0 1 8 13.3h2a5.2 5.2 0 0 1 5.2 5.2V20H2.8ZM16 4.9a3.3 3.3 0 0 1 0 6.3M17 13.6a5.2 5.2 0 0 1 4.2 5.1V20h-3.6"/></symbol>
+      <symbol id="feature-icon-cash" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M7.5 7.5h9M7.5 11.5h.01M12 11.5h.01M16.5 11.5h.01M7.5 15.5h.01M12 15.5h.01M16.5 15.5h.01"/></symbol>
+      <symbol id="feature-icon-printer" viewBox="0 0 24 24"><path d="M7 8V3.5h10V8M6 17H4.5A1.5 1.5 0 0 1 3 15.5v-6A1.5 1.5 0 0 1 4.5 8h15A1.5 1.5 0 0 1 21 9.5v6a1.5 1.5 0 0 1-1.5 1.5H18"/><path d="M7 14h10v6.5H7zM17.5 11.5h.01"/></symbol>
+      <symbol id="feature-icon-debt" viewBox="0 0 24 24"><path d="M5 3.5h9l5 5v6M14 3.8v5h4.8M5 3.5v17h8"/><path d="M8 12h7M8 15.5h5"/><circle cx="17" cy="17" r="3.2"/><path d="m19.4 19.4 2.1 2.1"/></symbol>
+    </svg>
+    <header class="topbar">
+      <nav class="nav wrap" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="VidPos, inicio">
+          <span class="brand-name">VidPos</span>
+          <span class="company-name" aria-live="polite">El Tio Lolo</span>
+          <span class="company-status" aria-label="Turno activo"></span>
+        </a>
+        <div class="nav-links">
+          <a href="#tablet">Cómo funciona</a>
+          <a href="#funciones">Módulos</a>
+          <a href="https://play.google.com/store/apps/details?id=com.luismiguel.vidpos" target="_blank" rel="noopener noreferrer">Descargar</a>
+          <a class="nav-cta" href="mailto:contacto@vidpos.mx">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    <nav class="mobile-nav" aria-label="Accesos rápidos">
+      <a href="#tablet">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="2.5"/><path d="M9 17.5h6"/></svg>
+        <span>Cómo funciona</span>
+      </a>
+      <a href="#funciones">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+        <span>Módulos</span>
+      </a>
+      <a class="mobile-nav-download" href="https://play.google.com/store/apps/details?id=com.luismiguel.vidpos" target="_blank" rel="noopener noreferrer">
+        <svg class="google-play-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 3.5v17l10-8.5Z"/>
+          <path d="m4 3.5 15.5 7.8c.6.3.6 1.1 0 1.4L4 20.5"/>
+          <path d="m13.8 12 2.8-2.1M13.8 12l2.8 2.1"/>
+        </svg>
+        <span>Descargar</span>
+      </a>
+    </nav>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-grid wrap">
+          <div class="hero-intro">
+            <h1>Tu negocio,<br>en <span>orden.</span></h1>
+            <p class="hero-copy">Todo lo que necesitas para gestionar las operaciones diarias de tu restaurante.</p>
+            <div class="hero-actions">
+              <a class="play-link" href="https://play.google.com/store/apps/details?id=com.luismiguel.vidpos" target="_blank" rel="noopener noreferrer" aria-label="Descargar VidPos en Google Play"><img src="./images/disponible.svg" alt="Disponible en Google Play"></a>
+            </div>
+          </div>
+          <div class="visual hero-stage">
+            <div class="hero-stage-copy">
+              <p class="stage-kicker">Organización en cada detalle</p>
+              <h2>Todo tu restaurante, bajo control.</h2>
+              <p>Organiza el servicio, administra tus productos y mantén cada área de tu restaurante funcionando en armonía.</p>
+            </div>
+            <div class="hero-device phone" aria-hidden="true">
+              <div class="phone-inner hero-phone-inner">
+                <img class="hero-phone-screen" src="./images/home_page.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <nav class="quick-access" aria-label="Funciones de VidPos">
+            <button class="quick-link" type="button" aria-pressed="true" data-quick-title="Ordena." data-quick-color="#007aff" data-quick-description="Mantén tu negocio organizado desde un solo lugar. Administra tus mesas, registra pedidos y coordina las comandas para que tu equipo trabaje de forma más ordenada y ofrezca una mejor experiencia a tus clientes."><span class="quick-icon"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 3.5h10a1 1 0 0 1 1 1v12l-2-1.5-2 1.5-2-1.5-2-1.5-2 1.5L4 17V4.5a1 1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M7 7h6M7 10h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><span><strong>Ordena</strong></span></button>
+            <button class="quick-link" type="button" aria-pressed="false" data-quick-title="Optimiza." data-quick-color="#34c759" data-quick-description="Simplifica las tareas diarias y ten mayor control de las operaciones de tu negocio. Gestiona tus ventas, supervisa tu inventario y organiza tus recursos para reducir el desorden operativo y aprovechar mejor cada jornada."><span class="quick-icon"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 13a6 6 0 1 1 12 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="m10 13 3.2-3.2M6.5 16.2h7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><span><strong>Optimiza</strong></span></button>
+            <button class="quick-link" type="button" aria-pressed="false" data-quick-title="Crece." data-quick-color="#ff9500" data-quick-description="Convierte la información en mejores decisiones. Consulta tus resultados, identifica tus productos más vendidos y conoce el desempeño de tu negocio para descubrir oportunidades y avanzar con mayor confianza."><span class="quick-icon"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 15.5 8.2 11l3 2.5L16 7.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.5 7.5H16V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Crece</strong></span></button>
+          </nav>
+        </div>
+      </section>
+
+      <div class="quick-detail" role="region" aria-label="Detalle de funciones">
+        <div class="quick-detail-media" aria-label="Espacio reservado para imagen"></div>
+        <div class="quick-detail-copy">
+          <span class="quick-detail-icon" aria-hidden="true"></span>
+          <p class="quick-detail-kicker">Registra cada orden</p>
+          <h3>Ordena.</h3>
+          <p>Mantén tu negocio organizado desde un solo lugar. Administra tus mesas, registra pedidos y coordina las comandas para que tu equipo trabaje de forma más ordenada y ofrezca una mejor experiencia a tus clientes.</p>
+          <ul class="quick-points"><li>Captura cada orden en segundos</li><li>Mantén todas las notas en un solo lugar</li></ul>
+        </div>
+      </div>
+      <section class="tablet-showcase" id="tablet" aria-labelledby="tablet-showcase-title">
+        <div class="wrap tablet-showcase-inner">
+          <div class="process-flow reveal" aria-label="Flujo de una operación en VidPos">
+            <svg class="process-connectors" viewBox="0 0 1000 680" preserveAspectRatio="none" aria-hidden="true">
+              <path class="process-line-base" d="M280 136H400M600 136H720M820 215V465M720 544H600M400 544H280"/>
+              <path class="process-line" d="M280 136H400M600 136H720M820 215V465M720 544H600M400 544H280"/>
+            </svg>
+            <article class="process-card process-card--orders">
+              <span class="process-icon process-icon--orders"><svg aria-hidden="true"><use href="#feature-icon-sales"></use></svg></span>
+              <span class="process-card-step">01 · PEDIDOS</span>
+              <h3>Cada pedido en su lugar.</h3>
+              <p>Registra los pedidos, administra las mesas y organiza las comandas para mantener el servicio bajo control.</p>
+            </article>
+            <article class="process-card process-card--kitchen">
+              <span class="process-icon process-icon--kitchen"><svg aria-hidden="true"><use href="#feature-icon-orders"></use></svg></span>
+              <span class="process-card-step">02 · COCINA</span>
+              <h3>Un servicio mejor coordinado.</h3>
+              <p>Facilita la organización de los pedidos entre el personal de atención y la cocina para dar seguimiento a la preparación.</p>
+            </article>
+            <article class="process-card process-card--sales">
+              <span class="process-icon process-icon--sales"><svg aria-hidden="true"><use href="#feature-icon-cash"></use></svg></span>
+              <span class="process-card-step">03 · VENTAS</span>
+              <h3>Tus ventas, siempre registradas.</h3>
+              <p>Consulta los importes de las cuentas y registra las ventas para llevar un mejor control de los ingresos de tu restaurante.</p>
+            </article>
+            <article class="process-card process-card--inventory">
+              <span class="process-icon process-icon--inventory"><svg aria-hidden="true"><use href="#feature-icon-inventory"></use></svg></span>
+              <span class="process-card-step">04 · INVENTARIO</span>
+              <h3>Más control de tus ingredientes.</h3>
+              <p>Administra tus productos, recetas y existencias para conocer mejor los recursos de tu negocio.</p>
+            </article>
+            <article class="process-card process-card--offline">
+              <span class="process-icon process-icon--offline"><svg aria-hidden="true"><use href="#feature-icon-offline"></use></svg></span>
+              <span class="process-card-step">05 · MODO SIN CONEXIÓN</span>
+              <h3>Tu operación no se detiene.</h3>
+              <p>Continúa utilizando las funciones compatibles cuando no tengas internet. Los datos guardados localmente se sincronizan al recuperar la conexión.</p>
+            </article>
+            <article class="process-card process-card--control">
+              <span class="process-icon process-icon--control"><svg aria-hidden="true"><use href="#feature-icon-movements"></use></svg></span>
+              <span class="process-card-step">06 · CONTROL DEL NEGOCIO</span>
+              <h3>Decide con mayor claridad.</h3>
+              <p>Consulta tus resultados, identifica los productos más vendidos y conoce el desempeño de tu restaurante para tomar decisiones mejor informadas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="funciones">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="eyebrow">Lo importante, simplificado</p>
+            <h2><strong>Cada parte de tu negocio<br>conectada.</strong></h2>
+            <p class="features-description">Del primer pedido al corte de caja: herramientas que hacen mas fácil el día a día de tu negocio.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature feature--wide feature--lavender reveal" id="pedidos" data-feature-icon="sales" data-feature-icon-color="purple" data-feature-screen="./images/ventas.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-order">
+                  <div class="art-order-head"><span>Nuevo pedido · Mesa 04</span><span class="art-tag">En curso</span></div>
+                  <div class="art-row"><span>2 × Capuchino</span><b>$110</b></div>
+                  <div class="art-row"><span>1 × Pan artesanal</span><b>$48</b></div>
+                  <div class="art-row"><span>Total</span><b>$158</b></div>
+                </div>
+              </div>
+              <p class="feature-kicker">El servicio empieza aquí</p>
+              <h3>Ventas</h3>
+              <p>Agrega productos, cantidades y notas al pedido, y conserva el detalle listo para seguirlo durante el servicio.</p>
+            </article>
+            <article class="feature feature--sand reveal" id="mesas" data-feature-icon="tables" data-feature-icon-color="green" data-feature-screen="./images/mesas.svg">
+              <div class="feature-art" aria-hidden="true">
+                <span class="art-table">01</span><span class="art-table">02</span><span class="art-table">03</span><span class="art-table">04</span>
+                <span class="art-map-label">Mapa de mesas</span>
+              </div>
+              <p class="feature-kicker">Una vista del salón</p>
+              <h3>Mesas</h3>
+              <p>Ubica las mesas y distingue de un vistazo cuáles están disponibles y cuáles tienen una cuenta activa.</p>
+            </article>
+            <article class="feature feature--dark reveal" id="comandas" data-feature-icon="orders" data-feature-icon-color="purple" data-feature-screen="./images/comandas.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-command-shot"><img src="./images/vidpos-comandas.png" alt=""></div>
+              </div>
+              <p class="feature-kicker">Del pedido a la cocina</p>
+              <h3>Cocina</h3>
+              <p>Consulta los artículos y el estado de cada pedido para que el equipo mantenga el servicio en movimiento.</p>
+            </article>
+            <article class="feature feature--blue reveal" data-feature-icon="offline" data-feature-icon-color="blue" data-feature-screen="./images/offline.svg">
+              <div class="feature-art" aria-hidden="true">
+                <span class="art-offline-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M2 8.8a15.7 15.7 0 0 1 16.3-3.5M5.2 12a10.6 10.6 0 0 1 8.3-2.8M8.6 15.4a5.4 5.4 0 0 1 3.4-1.2M3 3l18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="19" r="1.2" fill="currentColor"/></svg></span>
+                <span class="art-offline-label">Sin conexión · listo para continuar</span>
+              </div>
+              <p class="feature-kicker">Tu operación no se detiene</p>
+              <h3>Modo offline</h3>
+              <p>Sigue trabajando aunque la conexión falle. Los movimientos pendientes se sincronizan cuando vuelve internet.</p>
+            </article>
+            <article class="feature reveal" data-feature-icon="movements" data-feature-icon-color="teal" data-feature-screen="./images/movimientos.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-bars"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <p class="feature-kicker">Actividad a la vista</p>
+              <h3>Movimientos</h3>
+              <p>Revisa el historial de operaciones para entender qué pasó y cuándo, con registros organizados en un solo lugar.</p>
+            </article>
+            <article class="feature feature--sand reveal" data-feature-icon="catalog" data-feature-icon-color="blue" data-feature-screen="./images/productos.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-products"><div class="art-product"><div class="art-product-shape"></div><div class="art-product-line"></div></div><div class="art-product"><div class="art-product-shape"></div><div class="art-product-line"></div></div><div class="art-product"><div class="art-product-shape"></div><div class="art-product-line"></div></div></div>
+              </div>
+              <p class="feature-kicker">Tu oferta, organizada</p>
+              <h3>Productos</h3>
+              <p>Ordena tus productos y precios en un catálogo fácil de consultar al momento de registrar una venta.</p>
+            </article>
+            <article class="feature feature--lavender reveal" data-feature-icon="inventory" data-feature-icon-color="green" data-feature-screen="./images/inventario.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-stock">
+                  <div class="art-stock-row"><b>Café de olla</b><span>24 pzas.</span><span class="art-stock-track"><i></i></span></div>
+                  <div class="art-stock-row"><b>Leche entera</b><span>Bajo</span><span class="art-stock-track"><i></i></span></div>
+                </div>
+              </div>
+              <p class="feature-kicker">Lo que tienes y lo que falta</p>
+              <h3>Inventario</h3>
+              <p>Controla existencias y detecta qué productos conviene reponer para mantener tu operación preparada.</p>
+            </article>
+            <article class="feature feature--blue reveal" data-feature-icon="people" data-feature-icon-color="orange" data-feature-screen="./images/personal.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-people"><span class="art-person">LM</span><span class="art-person">AR</span><span class="art-person">VC</span><span class="art-person">+2</span></div>
+              </div>
+              <p class="feature-kicker">Tu equipo, en orden</p>
+              <h3>Personal</h3>
+              <p>Registra a las personas que forman parte del negocio y mantén la información del equipo accesible.</p>
+            </article>
+            <article class="feature feature--wide feature--dark reveal" id="caja" data-feature-icon="cash" data-feature-icon-color="purple" data-feature-screen="./images/corte_caja.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-receipt">
+                  <div class="art-receipt-title">RESUMEN DE CAJA</div>
+                  <div class="art-receipt-line"><span>Ventas</span><b>$8,420</b></div>
+                  <div class="art-receipt-line"><span>Efectivo</span><b>$5,160</b></div>
+                  <div class="art-receipt-line art-receipt-total"><span>Total del día</span><b>$8,420</b></div>
+                </div>
+              </div>
+              <p class="feature-kicker">Cierra el día con claridad</p>
+              <h3>Corte de caja</h3>
+              <p>Consulta el resumen de ventas y formas de pago al final de tu jornada para hacer un cierre más ordenado.</p>
+            </article>
+            <article class="feature feature--sand reveal" data-feature-icon="printer" data-feature-icon-color="grey" data-feature-screen="./images/impresoras.svg" data-feature-screen-fit="contain">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-printer"></div>
+              </div>
+              <p class="feature-kicker">Listas para el servicio</p>
+              <h3>Impresoras</h3>
+              <p>Guarda y organiza las impresoras de tu negocio para tener a la mano la configuración del equipo.</p>
+            </article>
+            <article class="feature feature--wide feature--lavender reveal" data-feature-icon="debt" data-feature-icon-color="teal" data-feature-screen="./images/adeudos.svg">
+              <div class="feature-art" aria-hidden="true">
+                <div class="art-debt">
+                  <div class="art-debt-head"><b>Cuenta de cliente</b><span>Abierta</span></div>
+                  <div class="art-debt-amount">$680.00</div>
+                  <div class="art-debt-note">Saldo pendiente · último movimiento hoy</div>
+                </div>
+              </div>
+              <p class="feature-kicker">Cuentas claras</p>
+              <h3>Adeudos</h3>
+              <p>Lleva un registro de saldos pendientes y consulta los movimientos asociados a cada cuenta de cliente.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase" id="app">
+        <div class="wrap showcase-layout">
+          <div class="section-head reveal">
+            <p class="eyebrow">Siempre contigo</p>
+            <h2>Dondequiera que estés,<br>tu negocio sigue a tu alcance.</h2>
+          </div>
+          <div class="showcase-caption reveal">
+            <p class="showcase-description">Con VidPos, consulta tus ventas y supervisa los movimientos de tu restaurante estés donde estés.</p>
+            <div class="showcase-action">
+              <a class="play-link" href="https://play.google.com/store/apps/details?id=com.luismiguel.vidpos" target="_blank" rel="noopener noreferrer" aria-label="Descargar VidPos en Google Play"><img src="./images/disponible.svg" alt="Disponible en Google Play"></a>
+            </div>
+          </div>
+          <figure class="showcase-photo reveal">
+            <img src="./images/beach.jpg" alt="Personas trabajando y descansando frente al mar">
+          </figure>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer-inner wrap">
+        <a class="brand footer-brand" href="#inicio" aria-label="VidPos, inicio"><img src="./images/Logo.png" alt=""><span class="brand-name">VidPos</span></a>
+        <span class="copyright">© VidPos. Hecho para tu negocio.</span>
+        <nav class="footer-links" aria-label="Enlaces legales">
+          <a class="footer-link" href="./privacy_policy.html">Política de privacidad</a>
+          <a class="footer-link" href="./delete-account.html">Eliminar cuenta</a>
+        </nav>
+        <a class="contact" href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
