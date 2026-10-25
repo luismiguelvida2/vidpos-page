@@ -10,6 +10,111 @@
         --content: 1160px;
       }
 
+      /* Privacy page navigation fallback */
+      .privacy-page {
+        margin: 0;
+        padding: 0;
+        background: #f9fafb;
+        color: #111827;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .privacy-page > .privacy-site-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        height: 72px;
+        padding: 0 max(24px, calc((100% - 1160px) / 2));
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #e5e7eb;
+        background: rgba(255,255,255,.96);
+        box-shadow: 0 1px 0 rgba(17,24,39,.04);
+        color: #6b7280;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .privacy-page > .privacy-site-header .privacy-site-brand {
+        color: #111827;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -.05em;
+        text-decoration: none;
+      }
+      .privacy-page > .privacy-site-header .privacy-site-brand:hover {
+        color: #6040c5;
+      }
+      .privacy-page > .wrapper {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 118px 24px 80px;
+      }
+      .privacy-page > .wrapper > header {
+        display: none;
+      }
+      .delete-account-page > .legal-site-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        height: 72px;
+        padding: 0 max(24px, calc((100% - 1160px) / 2));
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #e5e7eb;
+        background: rgba(255,255,255,.96);
+        box-shadow: 0 1px 0 rgba(17,24,39,.04);
+        color: #6b7280;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .delete-account-page > .legal-site-header .legal-site-brand {
+        color: #111827;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -.05em;
+        text-decoration: none;
+      }
+      .delete-account-page > .legal-site-header .legal-site-brand:hover {
+        color: #6040c5;
+      }
+      .delete-account-page > header {
+        display: none;
+      }
+      .delete-account-page > main {
+        padding-top: 118px;
+      }
+      @media (max-width: 600px) {
+        .privacy-page > .privacy-site-header {
+          height: 62px;
+          padding-inline: 18px;
+          font-size: 13px;
+        }
+        .privacy-page > .privacy-site-header .privacy-site-brand {
+          font-size: 18px;
+        }
+        .privacy-page > .wrapper {
+          width: calc(100% - 36px);
+          padding-top: 104px;
+        }
+        .delete-account-page > .legal-site-header {
+          height: 62px;
+          padding-inline: 18px;
+          font-size: 13px;
+        }
+        .delete-account-page > .legal-site-header .legal-site-brand {
+          font-size: 18px;
+        }
+        .delete-account-page > main {
+          padding-top: 104px;
+        }
+      }
+
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
       body {
@@ -1101,6 +1206,20 @@
           line-height: 1.1;
           text-align: center;
         }
+        .mobile-nav a.is-pressed,
+        .mobile-nav a:active {
+          animation: mobileNavPress .28s ease-out;
+          background: rgba(112,73,235,.12);
+        }
+        .mobile-nav .mobile-nav-download.is-pressed,
+        .mobile-nav .mobile-nav-download:active {
+          background: #6040c5;
+        }
+        @keyframes mobileNavPress {
+          0% { transform: scale(1); }
+          45% { transform: scale(.91); }
+          100% { transform: scale(1); }
+        }
         .mobile-nav svg {
           width: 21px;
           height: 21px;
@@ -1751,7 +1870,36 @@
     .wrapper {
       max-width: 820px;
       margin: 0 auto;
-      padding: 48px 24px 80px;
+      padding: 118px 24px 80px;
+    }
+    .privacy-site-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 20;
+      display: flex;
+      height: 72px;
+      padding: 0 max(24px, calc((100% - 1160px) / 2));
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 1px 0 rgba(17,24,39,.04);
+      backdrop-filter: blur(14px);
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .privacy-site-brand {
+      color: var(--text);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -.05em;
+      text-decoration: none;
+    }
+    .privacy-site-brand:hover {
+      color: #6040c5;
     }
 
     header {
@@ -2130,7 +2278,9 @@
     }
 
     @media (max-width: 600px) {
-      .wrapper { width: calc(100% - 36px); padding-top: 32px; }
+      .wrapper { width: calc(100% - 36px); padding-top: 104px; }
+      .privacy-site-header { height: 62px; padding-inline: 18px; font-size: 13px; }
+      .privacy-site-brand { font-size: 18px; }
       header { padding-bottom: 25px; }
       section { padding: 22px 18px; border-radius: 16px; }
       h1 { font-size: 34px; }

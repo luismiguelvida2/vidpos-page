@@ -3,6 +3,16 @@ const companyName = document.querySelector(".company-name");
 const companyNames = ["El Tio Lolo", "Miau Pizzas", "TexMex", "Brutal Kitchen", "La Chona", "Noreste Fusion"];
 let companyIndex = 0;
 
+document.querySelectorAll(".mobile-nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    link.classList.remove("is-pressed");
+    requestAnimationFrame(() => link.classList.add("is-pressed"));
+  });
+  link.addEventListener("animationend", () => {
+    link.classList.remove("is-pressed");
+  });
+});
+
 if (companyName && companyNames.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   window.setInterval(() => {
     companyName.classList.add("is-changing");
