@@ -2,101 +2,368 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eliminar cuenta — VidPos</title>
-      <link rel="canonical" href="https://vidpos.mx/delete-account/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad – VidPos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <link rel="canonical" href="https://vidpos.mx/privacy/">
       <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="delete-account-page">
+<body class="privacy-page">
+<div class="wrapper">
 
   <header>
-    <div class="logo">Vid<span>Pos</span></div>
+    <div class="brand">
+      <div class="brand-icon">VP</div>
+      <h1>Política de Privacidad – VidPos</h1>
+    </div>
+    <div class="meta">
+      <span class="tag blue">Versión 1.1</span>
+      <span class="tag">Última actualización: 19 de mayo de 2026</span>
+      <span class="tag">Aplica: México · Internacional</span>
+    </div>
   </header>
 
-  <main>
-    <div class="badge">Cuenta</div>
-    <h1>Eliminar tu cuenta</h1>
-    <p class="intro">
-      Si deseas eliminar tu cuenta de VidPos, sigue los pasos a continuación. 
-      El proceso es permanente e irreversible. Tu solicitud será procesada 
-      en un plazo de <strong style="color:#e8e8e8">48 horas hábiles</strong>.
+  <!-- Tabla de contenido -->
+  <div class="toc">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#s1">Responsable del tratamiento</a></li>
+      <li><a href="#s2">Información que recopilamos</a></li>
+      <li><a href="#s3">Permisos del dispositivo</a></li>
+      <li><a href="#s4">Uso de la información</a></li>
+      <li><a href="#s5">Base legal del tratamiento</a></li>
+      <li><a href="#s6">Compartir con terceros</a></li>
+      <li><a href="#s7">Transferencias internacionales</a></li>
+      <li><a href="#s8">Retención y eliminación</a></li>
+      <li><a href="#s9">Seguridad</a></li>
+      <li><a href="#s10">Derechos ARCO</a></li>
+      <li><a href="#s11">Menores de edad</a></li>
+      <li><a href="#s12">Cambios a esta política</a></li>
+      <li><a href="#s13">Contacto</a></li>
+    </ol>
+  </div>
+
+  <p style="margin-bottom:24px;">
+    Esta política de privacidad describe cómo <strong>VidPos</strong> ("la Aplicación"), 
+    desarrollada por <strong>Luis Miguel Vidal</strong> ("el Responsable"), recopila, 
+    usa, almacena y protege la información de sus usuarios, en cumplimiento con la 
+    <em>Ley Federal de Protección de Datos Personales en Posesión de los Particulares</em> 
+    (LFPDPPP) de México y demás normativas internacionales aplicables.
+  </p>
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="num">1</span> Responsable del tratamiento</h2>
+    <table>
+      <tr><th>Campo</th><th>Detalle</th></tr>
+      <tr><td><strong>Responsable</strong></td><td>Luis Miguel Vidal</td></tr>
+      <tr><td><strong>Aplicación</strong></td><td>VidPos – Sistema de Punto de Venta</td></tr>
+      <tr><td><strong>Correo de contacto</strong></td><td><a href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a></td></tr>
+      <tr><td><strong>País de operación principal</strong></td><td>México</td></tr>
+    </table>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="num">2</span> Información que recopilamos</h2>
+    <p>VidPos recopila únicamente la información que el propio usuario introduce o que es necesaria para las funciones de la aplicación:</p>
+
+    <table>
+      <tr>
+        <th>Categoría</th>
+        <th>Datos específicos</th>
+        <th>Origen</th>
+      </tr>
+      <tr>
+        <td><strong>Datos del negocio</strong></td>
+        <td>Nombre del negocio, productos, precios, categorías, inventario, ventas, historial de transacciones</td>
+        <td>Ingresados por el usuario</td>
+      </tr>
+      <tr>
+        <td><strong>Datos de clientes</strong></td>
+        <td>Nombre, teléfono, correo electrónico y cualquier dato adicional que el usuario registre</td>
+        <td>Ingresados por el usuario</td>
+      </tr>
+      <tr>
+        <td><strong>Datos de empleados</strong></td>
+        <td>Nombre, apellidos, teléfono, correo electrónico y rol dentro del negocio</td>
+        <td>Ingresados por el usuario</td>
+      </tr>
+      <tr>
+        <td><strong>Imágenes de productos</strong></td>
+        <td>Fotos seleccionadas o capturadas para identificar productos en el catálogo</td>
+        <td>Cámara o galería del dispositivo</td>
+      </tr>
+      <tr>
+        <td><strong>Datos de sincronización</strong></td>
+        <td>Todos los datos anteriores pueden sincronizarse con la nube para respaldo y acceso multi-dispositivo</td>
+        <td>Generado automáticamente al activar la sincronización</td>
+      </tr>
+    </table>
+
+    <div class="highlight">
+      <strong>Nota importante sobre datos de empleados:</strong> Al registrar información personal de terceros (empleados, clientes), el usuario —en su calidad de empleador o responsable del negocio— asume la responsabilidad de contar con la autorización correspondiente de dichas personas para el tratamiento de sus datos personales, conforme a la LFPDPPP.
+    </div>
+
+    <p><strong>No recopilamos</strong> datos de diagnóstico de errores, métricas de uso anónimas, ni información publicitaria. La aplicación no contiene SDKs de analítica de terceros (Firebase Analytics, Mixpanel, etc.).</p>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="num">3</span> Permisos del dispositivo</h2>
+    <div class="permission-grid">
+      <div class="perm-card">
+        <div class="perm-name">📷 Cámara</div>
+        <div class="perm-desc">Para capturar fotos de productos y para escanear códigos de barras y códigos QR asociados a artículos del inventario.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">🖼️ Almacenamiento / Galería</div>
+        <div class="perm-desc">Para seleccionar imágenes existentes del dispositivo como fotos de productos.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">🖨️ Red local (Wi-Fi / IP)</div>
+        <div class="perm-desc">Para conectarse a impresoras térmicas en la misma red local y generar tickets de venta físicos vía dirección IP.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">🌐 Internet</div>
+        <div class="perm-desc">Para la sincronización de datos con la nube (Supabase) y futuras actualizaciones de contenido.</div>
+      </div>
+      <div class="perm-card" style="border-color:#fbbf24; background:#fffbeb;">
+        <div class="perm-name" style="color:#92400e;">🔵 Bluetooth <span style="font-size:11px;font-weight:400;color:#b45309;">(funcionalidad futura)</span></div>
+        <div class="perm-desc">Reservado para una próxima funcionalidad de impresión de tickets en impresoras térmicas Bluetooth. Actualmente este permiso no está activo en la aplicación.</div>
+      </div>
+      <div class="perm-card" style="border-color:#fbbf24; background:#fffbeb;">
+        <div class="perm-name" style="color:#92400e;">📍 Ubicación <span style="font-size:11px;font-weight:400;color:#b45309;">(funcionalidad futura)</span></div>
+        <div class="perm-desc">Requerido por Android para el escaneo de dispositivos Bluetooth cercanos. Se activará junto con la funcionalidad Bluetooth. VidPos no registra, almacena ni transmite datos de ubicación en ningún momento.</div>
+      </div>
+    </div>
+    <div class="warn">
+      Los permisos de Bluetooth y Ubicación están declarados para una funcionalidad futura de impresión inalámbrica. Actualmente no están activos. La impresión de tickets se realiza mediante conexión directa por IP en la red local (Wi-Fi).
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="num">4</span> Uso de la información</h2>
+    <p>La información recopilada se usa <strong>exclusivamente</strong> para las siguientes finalidades:</p>
+    <ul>
+      <li><strong>Finalidades primarias (necesarias para el servicio):</strong>
+        <ul>
+          <li>Gestionar el punto de venta: inventario, ventas, clientes y empleados del negocio.</li>
+          <li>Identificar productos mediante escaneo de códigos de barras o QR.</li>
+          <li>Imprimir tickets de venta en impresoras térmicas conectadas a la red local (Wi-Fi / IP).</li>
+          <li>Respaldar y sincronizar los datos del negocio en la nube para acceso multi-dispositivo.</li>
+        </ul>
+      </li>
+      <li><strong>Finalidades secundarias (con posibilidad de negativa):</strong>
+        <ul>
+          <li>Enviar notificaciones relacionadas con actualizaciones importantes de la aplicación.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Los datos <strong>no serán utilizados</strong> con fines publicitarios, de perfilado comercial, ni serán cedidos a terceros para ningún fin ajeno a los descritos anteriormente.</p>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="num">5</span> Base legal del tratamiento</h2>
+    <p>El tratamiento de datos personales se sustenta en las siguientes bases legales:</p>
+    <table>
+      <tr>
+        <th>Base legal</th>
+        <th>Aplicación en VidPos</th>
+      </tr>
+      <tr>
+        <td><strong>Consentimiento</strong></td>
+        <td>Al registrarse y usar la aplicación, el usuario otorga su consentimiento para el tratamiento de sus datos conforme a esta política.</td>
+      </tr>
+      <tr>
+        <td><strong>Ejecución de contrato</strong></td>
+        <td>El tratamiento es necesario para prestar el servicio de punto de venta contratado (sincronización en la nube, impresión de tickets).</td>
+      </tr>
+      <tr>
+        <td><strong>Interés legítimo</strong></td>
+        <td>Mantenimiento de la seguridad y correcto funcionamiento de la aplicación.</td>
+      </tr>
+    </table>
+    <p>Para usuarios en la Unión Europea, el tratamiento se basa en el <strong>Artículo 6 del RGPD</strong> (Reglamento General de Protección de Datos), específicamente los apartados 6(1)(a) consentimiento y 6(1)(b) ejecución de contrato.</p>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="num">6</span> Compartir información con terceros</h2>
+    <p>No vendemos, alquilamos ni compartimos información personal con terceros con fines comerciales. Los únicos subprocesadores que acceden a los datos son:</p>
+    <table>
+      <tr>
+        <th>Proveedor</th>
+        <th>Función</th>
+        <th>Política de privacidad</th>
+      </tr>
+      <tr>
+        <td><strong>Supabase</strong></td>
+        <td>Almacenamiento y sincronización en la nube (base de datos, autenticación)</td>
+        <td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td>
+      </tr>
+    </table>
+    <p>Podemos divulgar información cuando sea requerido por ley, orden judicial o autoridad competente, limitándonos estrictamente a lo solicitado.</p>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="num">7</span> Transferencias internacionales de datos</h2>
+    <p>
+      Al utilizar Supabase como proveedor de nube, los datos pueden ser almacenados y procesados en 
+      servidores ubicados fuera de México, incluyendo servidores en Estados Unidos y otros países. 
+      Supabase cumple con el <strong>Marco de Privacidad de Datos UE-EE.UU.</strong> y cuenta con 
+      <strong>Cláusulas Contractuales Tipo</strong> aprobadas por la Comisión Europea para la 
+      transferencia internacional de datos.
     </p>
+    <p>
+      Conforme al <strong>Artículo 36 de la LFPDPPP</strong>, estas transferencias se realizan 
+      garantizando un nivel de protección equivalente al establecido en la ley mexicana. Al aceptar 
+      esta política, el usuario otorga su consentimiento para dichas transferencias internacionales.
+    </p>
+  </section>
 
-    <div class="steps">
-      <h2>Cómo solicitar la eliminación</h2>
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="num">8</span> Retención y eliminación de datos</h2>
+    <p>Los datos personales se conservan conforme a los siguientes criterios:</p>
+    <table>
+      <tr>
+        <th>Supuesto</th>
+        <th>Plazo de retención</th>
+      </tr>
+      <tr>
+        <td>Cuenta activa con sincronización en la nube</td>
+        <td>Durante todo el tiempo que el usuario mantenga activa su cuenta.</td>
+      </tr>
+      <tr>
+        <td>Solicitud de eliminación de cuenta</td>
+        <td>Los datos se eliminan de los servidores en un plazo máximo de <strong>30 días naturales</strong> a partir de la solicitud.</td>
+      </tr>
+      <tr>
+        <td>Datos almacenados localmente (sin nube)</td>
+        <td>Permanecen en el dispositivo hasta que el usuario los elimine manualmente o desinstale la aplicación.</td>
+      </tr>
+      <tr>
+        <td>Obligaciones legales</td>
+        <td>Ciertos registros pueden conservarse por el periodo que exija la legislación fiscal o mercantil aplicable.</td>
+      </tr>
+    </table>
+    <p>
+      Para solicitar la eliminación de datos, el usuario puede hacerlo directamente desde la aplicación 
+      (Configuración → Cuenta → Eliminar cuenta) o mediante solicitud escrita a 
+      <a href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a>.
+    </p>
+  </section>
 
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-text">
-          <strong>Abre la app VidPos</strong>
-          <p>Inicia sesión con tu cuenta de administrador.</p>
-        </div>
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="num">9</span> Seguridad</h2>
+    <p>Implementamos las siguientes medidas técnicas y organizativas para proteger la información:</p>
+    <ul>
+      <li><strong>Cifrado en tránsito:</strong> toda comunicación con la nube se realiza mediante conexiones cifradas (HTTPS / TLS 1.2+).</li>
+      <li><strong>Cifrado en reposo:</strong> Supabase cifra los datos almacenados en sus servidores.</li>
+      <li><strong>Acceso restringido:</strong> únicamente el usuario autenticado puede acceder a sus propios datos.</li>
+      <li><strong>Sin acceso de terceros:</strong> ningún empleado del Responsable tiene acceso a los datos del negocio del usuario.</li>
+    </ul>
+    <p>
+      Aunque implementamos medidas razonables de seguridad, ningún sistema es 100% infalible. 
+      En caso de una brecha de seguridad que afecte datos personales, notificaremos a los usuarios 
+      afectados en un plazo no mayor a <strong>72 horas</strong> tras tener conocimiento del incidente, 
+      conforme a las obligaciones establecidas por la LFPDPPP y el RGPD.
+    </p>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="num">10</span> Derechos ARCO y otros derechos</h2>
+    <p>
+      De acuerdo con la <strong>LFPDPPP</strong> y su Reglamento, el titular de los datos tiene derecho a:
+    </p>
+    <div class="arco-grid">
+      <div class="arco-card">
+        <div class="arco-title">A — Acceso</div>
+        <div class="arco-desc">Conocer qué datos personales tenemos sobre usted, cómo los usamos y a quién se los hemos compartido.</div>
       </div>
-
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-text">
-          <strong>Ve a tu Perfil</strong>
-          <p>Toca el menú lateral y selecciona la opción "Perfil".</p>
-        </div>
+      <div class="arco-card">
+        <div class="arco-title">R — Rectificación</div>
+        <div class="arco-desc">Solicitar la corrección de sus datos cuando sean inexactos, incompletos o desactualizados.</div>
       </div>
-
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-text">
-          <strong>Selecciona "Eliminar cuenta"</strong>
-          <p>Al final de la pantalla encontrarás la opción para eliminar tu cuenta.</p>
-        </div>
+      <div class="arco-card">
+        <div class="arco-title">C — Cancelación</div>
+        <div class="arco-desc">Solicitar la supresión de sus datos cuando considere que no son necesarios para el fin con que fueron recabados.</div>
       </div>
-
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-text">
-          <strong>Indica el motivo y confirma</strong>
-          <p>Escribe el motivo de tu solicitud y toca "Enviar". Recibirás una confirmación cuando tu cuenta sea eliminada.</p>
-        </div>
+      <div class="arco-card">
+        <div class="arco-title">O — Oposición</div>
+        <div class="arco-desc">Oponerse al tratamiento de sus datos para finalidades específicas, incluyendo finalidades secundarias.</div>
       </div>
     </div>
-
-    <hr class="divider"/>
-
-    <div class="data-info">
-      <h2>Datos que se eliminarán o conservarán</h2>
-
-      <div class="data-grid">
-        <div class="data-card deleted">
-          <div class="label">Se elimina</div>
-          <div class="value">Datos de perfil y credenciales de acceso</div>
-        </div>
-        <div class="data-card deleted">
-          <div class="label">Se elimina</div>
-          <div class="value">Configuración de empresa y sucursales</div>
-        </div>
-        <div class="data-card kept">
-          <div class="label">Se conserva</div>
-          <div class="value">Historial de ventas (requerido por ley fiscal)</div>
-        </div>
-        <div class="data-card kept">
-          <div class="label">Período de retención</div>
-          <div class="value">5 años para registros fiscales</div>
-        </div>
-      </div>
-
-      <div class="warning">
-        <strong>Antes de continuar:</strong> al eliminar tu cuenta, perderás el acceso a VidPos y no podrás recuperar la información eliminada.
-      </div>
-
-      <p class="contact">
-        ¿Tienes dudas o necesitas ayuda? Escríbenos a 
-        <a href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a> 
-        y te respondemos a la brevedad.
-      </p>
+    <p>
+      Para usuarios en la Unión Europea, adicionalmente se garantizan los derechos de 
+      <strong>portabilidad</strong> de datos y <strong>limitación del tratamiento</strong>, 
+      conforme al RGPD.
+    </p>
+    <div class="highlight">
+      <strong>¿Cómo ejercer sus derechos?</strong><br/>
+      Envíe su solicitud a <a href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a> indicando: 
+      nombre completo, derecho que desea ejercer y descripción clara de su solicitud. 
+      Responderemos en un plazo máximo de <strong>20 días hábiles</strong>, conforme al Artículo 32 de la LFPDPPP.
     </div>
-  </main>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="num">11</span> Menores de edad</h2>
+    <p>
+      VidPos es una aplicación de uso <strong>exclusivo para mayores de 18 años</strong>. 
+      No recopilamos intencionalmente datos personales de menores de edad. Si detectamos 
+      que se han recopilado datos de un menor sin consentimiento parental verificable, 
+      procederemos a eliminarlos de inmediato. Si usted tiene conocimiento de que un menor 
+      está usando la aplicación, contáctenos a 
+      <a href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a>.
+    </p>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="num">12</span> Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta política cuando sea necesario para reflejar cambios en la 
+      aplicación, en la legislación aplicable o en nuestras prácticas de privacidad. 
+      Los cambios se notificarán mediante:
+    </p>
+    <ul>
+      <li>Actualización de la fecha al inicio de este documento.</li>
+      <li>Notificación dentro de la aplicación en la siguiente apertura posterior al cambio.</li>
+      <li>Correo electrónico, si contamos con la dirección del usuario y el cambio es sustancial.</li>
+    </ul>
+    <p>El uso continuado de la aplicación tras la notificación implicará la aceptación de los cambios.</p>
+  </section>
+
+  <!-- 13 -->
+  <section id="s13">
+    <h2><span class="num">13</span> Contacto</h2>
+    <p>Para cualquier duda, solicitud o queja relacionada con esta política o el tratamiento de sus datos personales, puede contactarnos en:</p>
+    <div class="highlight">
+      <strong>Luis Miguel Vidal</strong><br/>
+      Responsable de datos – VidPos<br/>
+      📧 <a href="mailto:contacto@vidpos.mx">contacto@vidpos.mx</a><br/>
+      Tiempo de respuesta: máximo 20 días hábiles
+    </div>
+    <p>
+      Si considera que su solicitud no ha sido atendida satisfactoriamente, puede presentar una queja ante el 
+      <strong>Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI)</strong> 
+      en <a href="https://www.inai.org.mx" target="_blank">www.inai.org.mx</a>.
+    </p>
+  </section>
 
   <footer>
-    © 2025 VidPos · Todos los derechos reservados
+    <p>© 2026 VidPos – Luis Miguel Vidal. Todos los derechos reservados.</p>
+    <p style="margin-top:6px;">Esta política cumple con la LFPDPPP (México), RGPD (Unión Europea) y los requisitos de Google Play Store.</p>
   </footer>
 
+</div>
 </body>
 </html>
